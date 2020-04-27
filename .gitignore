@@ -1,0 +1,5 @@
+/bin
+/build
+/notebook/.ipynb_checkpoints
+/output
+/source/__pycache__
