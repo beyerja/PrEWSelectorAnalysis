@@ -69,7 +69,7 @@ int main (int /*argc*/, char **/*argv*/) {
   setup.complete_setup(); // This must come last in linking setup
 
   spdlog::info("Get expected (not fluctuated) distributions using toy generator.");
-  PREW::ToyMeas::ToyGen toy_gen (setup.get_data_connector(),setup.get_pars());
+  PrEW::ToyMeas::ToyGen toy_gen (setup.get_data_connector(),setup.get_pars());
   auto distrs = toy_gen.get_expected_distrs(energy);
 
   spdlog::info("Open output file.");
